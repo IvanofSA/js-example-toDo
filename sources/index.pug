@@ -1,0 +1,31 @@
+extends layout/template
+
+block vars
+  - var pageTemplate = "index"; // page-specific var
+
+block head
+
+block content
+  .container
+    .todo#app
+
+      h1.todo__title ToDo List
+
+      .todo__info.info
+
+        .info__item.info__item_success
+          .info__title Задач выполнено:
+          .info__result.js-info-success 0
+
+        .info__item.info__item_all
+          .info__title Всего задач:
+          .info__result.js-info-all 0
+
+      .todo__current
+        ul.todo__list.js-list-tasks
+
+      .todo__add
+        input(type="text" placeholder="Добавьте задачу").todo__input
+
+      .todo__btn
+        a.btn Добавить задачу
