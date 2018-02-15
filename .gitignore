@@ -51,3 +51,4 @@ node_modules/
 /bower_components
 /yarn.lock
 /web/bundles/frontend
+package-lock.json
